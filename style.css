@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed";
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: tomato;
+  padding: 10px;
+}
+
+header h1 {
+  white-space: nowrap;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.buttons button {
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+.buttons button:nth-child(1) {
+  background-color: black;
+}
+
+.buttons button:nth-child(2) {
+  background-color: teal;
+}
+
+.buttons button:nth-child(3) {
+  background-color: darkolivegreen;
+}
+
+.cat-wrapper {
+  padding: 20px;
+}
+
+.cat-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+.cat {
+  max-width: 260px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cat img {
+  width: 100%;
+  border-radius: 8px;
+}
+.cat p {
+  position: absolute;
+  bottom: 8px;
+  background-color: antiquewhite;
+  padding: 5px 10px;
+  border-radius: 6px;
+  width: 60%;
+  text-align: center;
+}
+
+.prod-wrapper {
+  padding: 20px;
+}
+
+.prod-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 100px;
+}
+@media(max-width:700px){
+    .prod-list{
+        justify-content: center;
+    }
+}
+
+.prod {
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.prod img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.prod-info {
+    background-color: black;
+    color: antiquewhite;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+.prod-info span {
+    letter-spacing: 1px;
+}
+.prod-info button {
+    background-color:cadetblue;
+    color: antiquewhite;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+}
