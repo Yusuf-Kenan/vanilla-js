@@ -13,7 +13,7 @@
       <h1>E-Commerce</h1>
       <input type="text" />
       <div class="buttons">
-        <button>cart</button>
+        <button id="cart">cart</button>
         <button>Login</button>
         <button>Signup</button>
       </div>
@@ -30,12 +30,23 @@
        <div class="prod-wrapper">
         <h1>Products</h1>
         <div class="prod-list">
-           
         </div>
       </div>
 
+       <!--MODAL -->
       <div class="modal-wrapper">
-        <div class="modal"></div>
+        <div class="modal">
+            <img src="/images/close.png" id="close">
+            
+            <div class="cart-item">
+                
+                <h3>Prod Name</h3>
+                <h3>Price</h3>
+                <h3>Amount</h3>
+
+            </div>
+            <p>Total: <span>price total</span></p>
+        </div>
 
       </div>
     </main>
